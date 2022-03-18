@@ -22,7 +22,6 @@ class Gramformer:
         self.correction_model     = AutoModelForSeq2SeqLM.from_pretrained(correction_model_tag)
         self.correction_model     = self.correction_model.to(device)
         self.model_loaded = True
-        print("[Gramformer] Grammar error correct/highlight model loaded..")
     elif models == 2:
         # TODO
         print("TO BE IMPLEMENTED!!!")
